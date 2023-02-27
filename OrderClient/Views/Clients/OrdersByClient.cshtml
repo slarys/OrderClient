@@ -1,0 +1,34 @@
+﻿@model System.Collections.Generic.List<OrderClient.Models.Orders.Order>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>title</h2>
+
+<h2>Orders for @ViewData["SecondName"]</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>OrderDate</th>
+        <th>Description</th>
+        <th>OrderPrice</th>
+        <th>CloseDate</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var order in Model)
+    {
+        <tr>
+            <td>@order.ID</td>
+            <td>@order.OrderDate</td>
+            <td>@order.Description</td>
+            <td>@order.OrderPrice</td>
+            <td>@order.CloseDate</td>
+        </tr>
+    }
+    </tbody>
+</table>

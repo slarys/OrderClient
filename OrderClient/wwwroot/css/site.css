@@ -1,0 +1,29 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.second-name {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+body {
+    background-image: url('https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?w=1380&t=st=1677490829~exp=1677491429~hmac=80c1cca89daf4503f92ab5553b56ff922f56628d0d6b2b02c5d160708382779d');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
