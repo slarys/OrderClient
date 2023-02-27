@@ -152,7 +152,7 @@ namespace OrderClient.Controllers
                     var client = await _context.Client.FindAsync(orderDto.ClientID);
                     if (client != null)
                     {
-                        client.OrderAmount += 1; // 
+                        client.OrderAmount += 1; 
                         _context.Update(client);
                         await _context.SaveChangesAsync();
                     }
